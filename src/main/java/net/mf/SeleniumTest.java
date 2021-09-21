@@ -138,10 +138,10 @@ public class SeleniumTest  {
         Utils.highlight(driver.findElement(By.visibleText(Pattern.compile("CHECKOUT \\(\\$*"))), 1000);
         driver.findElement(By.visibleText(Pattern.compile("CHECKOUT \\(\\$*"))).click();
 
-        //Checkout
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.visibleText("NEXT")));
-        Utils.highlight(driver.findElement(By.visibleText("NEXT")), 1000);
-        driver.findElement(By.visibleText("NEXT")).click();
+        //Checkout - Use XPath as visibleText was not working correctly on BlueShift
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"next_btn\"]")));
+        Utils.highlight(driver.findElement(By.xpath("//*[@id=\"next_btn\"]")), 1000);
+        driver.findElement(By.xpath("//*[@id=\"next_btn\"]")).click();
 
         String path ="//*[@id=\"paymentMethod\"]/div/div[2]/sec-form/sec-view[1]/div/input";
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));

@@ -94,7 +94,7 @@ public class SeleniumTest  {
 
         Reporter.reportEvent("Open Website", "Opening website: "+ADV_WEBSITE);
 
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
         //Login to Advantage

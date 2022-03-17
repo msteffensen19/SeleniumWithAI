@@ -28,8 +28,8 @@ import java.util.regex.Pattern;
 public class SeleniumTest  {
     // This script was created against AOS 1.1.3.  Since it uses Xpath, you may need to update the script
     // if using against a different version.
-    private static final String ADV_WEBSITE  = "http://nimbusserver.aos.com:8000/#/";
-    //private static final String ADV_WEBSITE  = "http://www.advantageonlineshopping.com";
+    //private static final String ADV_WEBSITE  = "http://nimbusserver.aos.com:8000/#/";
+    private static final String ADV_WEBSITE  = "http://www.advantageonlineshopping.com";
 
     //You will need to have an account created in AOS and will need to supply the credentials
     //These are known defaults as of 2018/sep/12
